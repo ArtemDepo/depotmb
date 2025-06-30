@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ДЕПО - Vape Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: calc(33% - 20px);
+            padding: 15px;
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Адаптивность */
+        @media(max-width: 768px){
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+            .product-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ДЕПО - Vape Shop</h1>
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#products">Товары</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>О нас</h2>
+    <p>Добро пожаловать в vape shop "ДЕПО"! У нас широкий выбор электронных сигарет, жидкостей и аксессуаров. Мы предлагаем качественный сервис и лучшие цены.</p>
+</section>
+
+<section id="products">
+    <h2>Наши товары</h2>
+    <div class="products">
+        <!-- Пример товара -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200.png?text=Электронная+сигарета" alt="Электронная сигарета" />
+            <h3>Электронная сигарета "VapeX"</h3>
+            <p>Цена: 3000 руб.</p>
+        </div>
+        <!-- Еще товары можно добавить аналогично -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200.png?text=Жидкость" alt="Жидкость для парения" />
+            <h3>Жидкость "CoolMint"</h3>
+            <p>Цена: 500 руб.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contacts">
+    <h2>Контакты</h2>
+    <p>Адрес: г. Тамбов, ул. августа бебеля, д.18</p>
+    <p>Телефон: +7 (901) 989-59-77</p>
+    <p>Email: info@depo-vape.ru</p>
+</section>
+
+<footer>
+    &copy; 2024 ДЕПО - Vape Shop. Все права защищены.
+</footer>
+
+</body>
+</html>
